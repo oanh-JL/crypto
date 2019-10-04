@@ -28,7 +28,7 @@ public class SymmetricCrypto {
         /**
          * @param key = 16 ki tu
          */
-        String key = "hyakimarujackspa";
+        String key = "abcdefghiklmnopq";
         secretKeySpec = new SecretKeySpec(key.getBytes(), algorithm);
     }
 

@@ -19,11 +19,11 @@ public class Main {
         String en_msg_spec = sc.encryptText(msg,sc.getSecretKeySpec());
 
         String de_msg = sc.decryptText(en_msg, sc.getSecretKey());
-        String de_msg_spec = sc.decryptText(en_msg, sc.getSecretKeySpec());
+        String de_msg_spec = sc.decryptText(en_msg_spec, sc.getSecretKeySpec());
 
         System.out.println("plain text " + msg);
-        System.out.println("Encypted tect" + en_msg);
-       System.out.println("Decrypted text" +de_msg);
+        System.out.println("Encypted tect" + en_msg_spec);
+       System.out.println("Decrypted text" +de_msg_spec);
 
 
     }
